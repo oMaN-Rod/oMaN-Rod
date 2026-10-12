@@ -29,15 +29,9 @@ Engineer by day, coding enthusiast by night.
 ### Stats
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile/stats-light.svg" />
-  <img src="./profile/stats-light.svg" alt="GitHub Stats" />
-</picture>
-&nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs-light.svg" />
-  <img src="./profile/top-langs-light.svg" alt="Top Languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/overview-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./profile/overview-light.svg" />
+  <img src="./profile/overview-light.svg" alt="GitHub stats and most used languages" />
 </picture>
 
 ---
