@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import { THEMES, FONT_FAMILY, esc } from "./theme.mjs";
 
 const login = process.env.GITHUB_USER ?? process.env.GITHUB_REPOSITORY_OWNER;
 const token = process.env.GH_TOKEN ?? process.env.GITHUB_TOKEN;
@@ -9,25 +10,6 @@ const MAX_LANGS = 6;
 if (!login || !token) {
   throw new Error("GITHUB_USER (or GITHUB_REPOSITORY_OWNER) and GH_TOKEN are required");
 }
-
-const THEMES = {
-  dark: {
-    bg: "#0d1117",
-    border: "#30363d",
-    tile: "#161b22",
-    text: "#e6edf3",
-    muted: "#8b949e",
-    accent: "#58a6ff",
-  },
-  light: {
-    bg: "#ffffff",
-    border: "#d0d7de",
-    tile: "#f6f8fa",
-    text: "#1f2328",
-    muted: "#656d76",
-    accent: "#0969da",
-  },
-};
 
 const ICONS = {
   star: "M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z",
@@ -145,9 +127,6 @@ async function fetchProfile() {
   };
 }
 
-const esc = (s) =>
-  String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" })[c]);
-
 const compact = new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 });
 const formatCount = (n) => (n >= 10000 ? compact.format(n) : n.toLocaleString("en"));
 const formatPercent = (p) => `${p.toFixed(1)}%`;
@@ -214,7 +193,7 @@ function render(profile, theme) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title">
   <title id="title">${esc(title)}</title>
   <style>
-    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
+    text { font-family: ${FONT_FAMILY}; }
     .heading { font-size: 15px; font-weight: 600; fill: ${theme.text}; }
     .caption { font-size: 12px; fill: ${theme.muted}; }
     .label { font-size: 12px; fill: ${theme.muted}; }
