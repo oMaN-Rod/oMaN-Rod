@@ -30,7 +30,7 @@
       <rect width="120" height="64" rx="8" fill="#161b22"/>
       <path transform="translate(12 11)" fill="#58a6ff" d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/>
       <text class="label" x="34" y="23.5">Commits</text>
-      <text class="value" x="12" y="51">2,827</text>
+      <text class="value" x="12" y="51">2,976</text>
     </g>
     <g class="fade" style="animation-delay:310ms" transform="translate(284 68)">
       <rect width="120" height="64" rx="8" fill="#161b22"/>
@@ -42,7 +42,7 @@
       <rect width="120" height="64" rx="8" fill="#161b22"/>
       <path transform="translate(12 11)" fill="#58a6ff" d="M9.533.753V.752c.217 2.385 1.463 3.626 2.653 4.81C13.37 6.74 14.498 7.863 14.498 10c0 3.5-3 6-6.5 6S1.5 13.512 1.5 10c0-1.298.536-2.56 1.425-3.286.376-.308.862 0 1.035.454C4.46 8.487 5.581 8.419 6 8c.282-.282.341-.811-.003-1.5C4.34 3.187 7.035.75 8.77.146c.39-.137.726.194.763.607ZM7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.79 2.79 0 0 1-1.436-.874A3.198 3.198 0 0 0 3 10c0 2.53 2.164 4.5 4.998 4.5Z"/>
       <text class="label" x="34" y="23.5">Contributions</text>
-      <text class="value" x="12" y="51">2,956</text>
+      <text class="value" x="12" y="51">3,105</text>
     </g>
     <g class="fade" style="animation-delay:470ms" transform="translate(156 144)">
       <rect width="120" height="64" rx="8" fill="#161b22"/>
@@ -66,13 +66,13 @@
   </mask>
   <g mask="url(#sweep)">
     <g transform="rotate(-90 518 138)">
-      <circle cx="518" cy="138" r="54" fill="none" stroke="#dea584" stroke-width="18" stroke-dasharray="139.29 200.00" stroke-dashoffset="0.00"/>
-      <circle cx="518" cy="138" r="54" fill="none" stroke="#3178c6" stroke-width="18" stroke-dasharray="128.79 210.50" stroke-dashoffset="-140.79"/>
-      <circle cx="518" cy="138" r="54" fill="none" stroke="#ff3e00" stroke-width="18" stroke-dasharray="45.46 293.83" stroke-dashoffset="-271.08"/>
-      <circle cx="518" cy="138" r="54" fill="none" stroke="#f1e05a" stroke-width="18" stroke-dasharray="3.94 335.35" stroke-dashoffset="-318.04"/>
-      <circle cx="518" cy="138" r="54" fill="none" stroke="#663399" stroke-width="18" stroke-dasharray="3.64 335.65" stroke-dashoffset="-323.48"/>
-      <circle cx="518" cy="138" r="54" fill="none" stroke="#89e051" stroke-width="18" stroke-dasharray="1.37 337.92" stroke-dashoffset="-328.63"/>
-      <circle cx="518" cy="138" r="54" fill="none" stroke="#8b949e" stroke-width="18" stroke-dasharray="6.30 333.00" stroke-dashoffset="-331.50"/>
+      <circle cx="518" cy="138" r="54" fill="none" stroke="#dea584" stroke-width="18" stroke-dasharray="138.85 200.44" stroke-dashoffset="0.00"/>
+      <circle cx="518" cy="138" r="54" fill="none" stroke="#3178c6" stroke-width="18" stroke-dasharray="129.44 209.86" stroke-dashoffset="-140.35"/>
+      <circle cx="518" cy="138" r="54" fill="none" stroke="#ff3e00" stroke-width="18" stroke-dasharray="45.32 293.97" stroke-dashoffset="-271.29"/>
+      <circle cx="518" cy="138" r="54" fill="none" stroke="#f1e05a" stroke-width="18" stroke-dasharray="3.92 335.37" stroke-dashoffset="-318.11"/>
+      <circle cx="518" cy="138" r="54" fill="none" stroke="#663399" stroke-width="18" stroke-dasharray="3.63 335.67" stroke-dashoffset="-323.53"/>
+      <circle cx="518" cy="138" r="54" fill="none" stroke="#89e051" stroke-width="18" stroke-dasharray="1.36 337.93" stroke-dashoffset="-328.66"/>
+      <circle cx="518" cy="138" r="54" fill="none" stroke="#8b949e" stroke-width="18" stroke-dasharray="6.27 333.02" stroke-dashoffset="-331.52"/>
     </g>
   </g>
   <g class="fade" style="animation-delay:600ms" text-anchor="middle">
@@ -83,12 +83,12 @@
     <g class="fade" style="animation-delay:300ms" transform="translate(616 78.0)">
       <circle cx="5" cy="0" r="5" fill="#dea584"/>
       <text class="lang" x="18" y="4">Rust</text>
-      <text class="percent" x="196" y="4" text-anchor="end">41.5%</text>
+      <text class="percent" x="196" y="4" text-anchor="end">41.4%</text>
     </g>
     <g class="fade" style="animation-delay:380ms" transform="translate(616 98.0)">
       <circle cx="5" cy="0" r="5" fill="#3178c6"/>
       <text class="lang" x="18" y="4">TypeScript</text>
-      <text class="percent" x="196" y="4" text-anchor="end">38.4%</text>
+      <text class="percent" x="196" y="4" text-anchor="end">38.6%</text>
     </g>
     <g class="fade" style="animation-delay:460ms" transform="translate(616 118.0)">
       <circle cx="5" cy="0" r="5" fill="#ff3e00"/>
